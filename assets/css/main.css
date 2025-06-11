@@ -4179,3 +4179,26 @@ input, select, textarea {
 
 	}
 	
+.features .image {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.features .image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.features .image:hover img {
+  transform: scale(1.05);
+}
